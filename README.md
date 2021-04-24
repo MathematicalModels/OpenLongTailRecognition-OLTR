@@ -43,41 +43,10 @@ Please also change the `data_root` in `main.py` accordingly.
 
 ## Training & Testing
 
-### ImageNet100
-- Stage 1 training:
 ```
-python main.py --config ./config/ImageNet_LT/stage_1.py
-```
-- Stage 2 training:
-```
-python main.py --config ./config/ImageNet_LT/stage_2_meta_embedding.py
+python run.py --dataset imagenet100-IF10 (cifar100-IF10) --root your_root --code-length 32 --number-classes 100 --number-prototypes 100 --batch-size 128 --dynamic-meta-embedding True --dpp_k 3
 ```
 
-
-### Cifar100
-- Stage 1 training (At this stage, multi-GPU might be necessary since we are finetuning a ResNet-152.):
-```
-python main.py --config ./config/Places_LT/stage_1.py
-```
-- Stage 2 training (At this stage, only single-GPU is supported, please switch back to single-GPU training.):
-```
-python main.py --config ./config/Places_LT/stage_2_meta_embedding.py
-```
-
-
-## Reproduced Benchmarks and Model Zoo (Updated on 03/05/2020)
-
-### ImageNet-LT Open-Set Setting
-
-|   Backbone  |    Many-Shot   |  Medium-Shot  |   Few-Shot  |  F-Measure  |      Download      |
-| :---------: | :------------: | :-----------: | :---------: | :---------: | :----------------: |
-|  ResNet-10  |      44.2      |      35.2     |    17.5     |     44.6    |     [model](https://drive.google.com/open?id=1CKcZuTQJkRvA3pUK_AL_H2wsvt5gY5of)      |
-
-### Places-LT Open-Set Setting
-
-|   Backbone  |    Many-Shot   |  Medium-Shot  |   Few-Shot  |  F-Measure  |      Download      |
-| :---------: | :------------: | :-----------: | :---------: | :---------: | :----------------: |
-| ResNet-152  |      43.7      |      40.2     |    28.0     |     50.0    |     [model](https://drive.google.com/open?id=1ZkYzg74O8hKlsq8LcLlECsi2QVeG5mr0)      |
 
 ## CAUTION
 The current code was prepared using single GPU. 
