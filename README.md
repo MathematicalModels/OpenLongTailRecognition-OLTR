@@ -13,7 +13,7 @@ in ACM Special Interest Group on Information Retrieval (SIGIR) 2021, **Full Pape
 Further information please contact [Yong Chen](mailto:butterfly.chinese@pku.edu.cn).
 
 ## Update notifications
-* __03/04/2020:__ We ***
+* __**/**/2021:__ We ***
 
 ## Requirements
 * [PyTorch](https://pytorch.org/) (version >= ？)
@@ -22,8 +22,6 @@ Further information please contact [Yong Chen](mailto:butterfly.chinese@pku.edu.
 ## Data Preparation
 
 <img src='./assets/dataset.png' width=800>
-
-NOTE: Places-LT dataset have been updated since the first version. Please download again if you have the first version. 
 
 - First, please download the [ImageNet_2014](http://image-net.org/index) and [Places_365](http://places2.csail.mit.edu/download.html) (256x256 version).
 Please also change the `data_root` in `main.py` accordingly.
@@ -52,7 +50,7 @@ data
 
 <img src='./assets/pipeline.png' width=800>
 
-### ImageNet-LT
+### ImageNet100
 - Stage 1 training:
 ```
 python main.py --config ./config/ImageNet_LT/stage_1.py
@@ -61,20 +59,9 @@ python main.py --config ./config/ImageNet_LT/stage_1.py
 ```
 python main.py --config ./config/ImageNet_LT/stage_2_meta_embedding.py
 ```
-- Close-set testing:
-```
-python main.py --config ./config/ImageNet_LT/stage_2_meta_embedding.py --test
-```
-- Open-set testing (thresholding)
-```
-python main.py --config ./config/ImageNet_LT/stage_2_meta_embedding.py --test_open
-```
-- Test on stage 1 model
-```
-python main.py --config ./config/ImageNet_LT/stage_1.py --test
-```
 
-### Places-LT
+
+### Cifar100
 - Stage 1 training (At this stage, multi-GPU might be necessary since we are finetuning a ResNet-152.):
 ```
 python main.py --config ./config/Places_LT/stage_1.py
@@ -83,14 +70,7 @@ python main.py --config ./config/Places_LT/stage_1.py
 ```
 python main.py --config ./config/Places_LT/stage_2_meta_embedding.py
 ```
-- Close-set testing:
-```
-python main.py --config ./config/Places_LT/stage_2_meta_embedding.py --test
-```
-- Open-set testing (thresholding)
-```
-python main.py --config ./config/Places_LT/stage_2_meta_embedding.py --test_open
-```
+
 
 ## Reproduced Benchmarks and Model Zoo (Updated on 03/05/2020)
 
@@ -107,16 +87,11 @@ python main.py --config ./config/Places_LT/stage_2_meta_embedding.py --test_open
 | ResNet-152  |      43.7      |      40.2     |    28.0     |     50.0    |     [model](https://drive.google.com/open?id=1ZkYzg74O8hKlsq8LcLlECsi2QVeG5mr0)      |
 
 ## CAUTION
-The current code was prepared using single GPU. The use of multi-GPU can cause problems except for the first stage of `Places-LT`. 
+The current code was prepared using single GPU. 
 
 ## License and Citation
 The use of this software is released under [BSD-3](https://github.com/zhmiao/OpenLongTailRecognition-OLTR/blob/master/LICENSE).
 ```
 TODO
-@inproceedings{openlongtailrecognition,
-  title={Large-Scale Long-Tailed Recognition in an Open World},
-  author={Liu, Ziwei and Miao, Zhongqi and Zhan, Xiaohang and Wang, Jiayun and Gong, Boqing and Yu, Stella X.},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2019}
-}
+BIB for the paper
 ```
