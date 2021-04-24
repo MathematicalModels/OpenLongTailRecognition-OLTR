@@ -38,13 +38,12 @@ data
     |--Cifar100-IF50
     |--Cifar100-IF100
 ```
-Please also change the `data_root` in `main.py` accordingly.
 
 
 ## Training & Testing
 
 ```
-python run.py --dataset imagenet100-IF10 (cifar100-IF10) --root your_root --code-length 32 --number-classes 100 --number-prototypes 100 --batch-size 128 --dynamic-meta-embedding True --dpp_k 3
+python run.py --dataset imagenet100-IF10 (cifar100-IF10) --root your_data_root --code-length 32 --number-classes 100 --number-prototypes 100 --batch-size 128 --dynamic-meta-embedding True --dpp_k 3
 ```
 
 
