@@ -6,7 +6,7 @@
 `LTH Net` is the author's re-implementation of the long-tail hashing network described in:  
 "[Long-Tail Hashing](https://arxiv.org/abs/****)"   
 [Yong Chen](https://zero-lab-pku.github.io/personwise/chenyong/),&nbsp; [Yuqing Hou],&nbsp; [Shu Leng],&nbsp; [Qing Zhang],&nbsp; [Zhouchen Lin](https://zhouchenlin.github.io/),&nbsp; [Dell Zhang](https://www.dcs.bbk.ac.uk/~dell/)&nbsp; &nbsp; 
-in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019, **Oral Presentation**
+in ACM Special Interest Group on Information Retrieval (SIGIR) 2021, **Full Paper**
 
 <img src='./LTHNet.png' width=800>
 
