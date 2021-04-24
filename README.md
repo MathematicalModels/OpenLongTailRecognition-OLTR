@@ -21,32 +21,27 @@ Further information please contact [Yong Chen](mailto:butterfly.chinese@pku.edu.
 
 ## Data Preparation
 
-- First, please download the ImageNet100 and [Cifar100](https://www.cs.toronto.edu/~kriz/cifar.html).
-Please also change the `data_root` in `main.py` accordingly.
-
-- Next, please download ImageNet-LT and Places-LT from [here](https://drive.google.com/drive/u/1/folders/1j7Nkfe6ZhzKFXePHdsseeeGI877Xu1yf). Please put the downloaded files into the `data` directory like this:
+- First, please download the [ImageNet100](baidunetdisk) and [Cifar100](baidunetdisk).
+Please put the downloaded files into the `data` directory like this:
 ```
 data
-  |--ImageNet_LT
-    |--ImageNet_LT_open
-    |--ImageNet_LT_train.txt
-    |--ImageNet_LT_test.txt
-    |--ImageNet_LT_val.txt
-    |--ImageNet_LT_open.txt
-  |--Places_LT
-    |--Places_LT_open
-    |--Places_LT_train.txt
-    |--Places_LT_test.txt
-    |--Places_LT_val.txt
-    |--Places_LT_open.txt
+  |--ImageNet100
+    |--ImageNet100-IF1
+    |--ImageNet100-IF10
+    |--ImageNet100-IF20
+    |--ImageNet100-IF50
+    |--ImageNet100-IF100
+  |--Cifar100
+    |--Cifar100-IF1
+    |--Cifar100-IF10
+    |--Cifar100-IF20
+    |--Cifar100-IF50
+    |--Cifar100-IF100
 ```
+Please also change the `data_root` in `main.py` accordingly.
 
-## Download Caffe Pre-trained Models for Places_LT Stage_1 Training
-* Caffe pretrained ResNet152 weights can be downloaded from [here](https://drive.google.com/uc?export=download&id=0B7fNdx_jAqhtckNGQ2FLd25fa3c), and save the file to `./logs/caffe_resnet152.pth`
 
-## Getting Started (Training & Testing)
-
-<img src='./assets/pipeline.png' width=800>
+## Training & Testing
 
 ### ImageNet100
 - Stage 1 training:
