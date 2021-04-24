@@ -21,9 +21,7 @@ Further information please contact [Yong Chen](mailto:butterfly.chinese@pku.edu.
 
 ## Data Preparation
 
-<img src='./assets/dataset.png' width=800>
-
-- First, please download the [ImageNet_2014](http://image-net.org/index) and [Places_365](http://places2.csail.mit.edu/download.html) (256x256 version).
+- First, please download the ImageNet100 and [Cifar100](https://www.cs.toronto.edu/~kriz/cifar.html).
 Please also change the `data_root` in `main.py` accordingly.
 
 - Next, please download ImageNet-LT and Places-LT from [here](https://drive.google.com/drive/u/1/folders/1j7Nkfe6ZhzKFXePHdsseeeGI877Xu1yf). Please put the downloaded files into the `data` directory like this:
