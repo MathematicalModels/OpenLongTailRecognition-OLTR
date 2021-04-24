@@ -5,10 +5,10 @@
 ## Overview
 `LTH Net` is the author's re-implementation of the long-tail hashing network described in:  
 "[Long-Tail Hashing](https://arxiv.org/abs/****)"   
-[Yong Chen](https://zero-lab-pku.github.io/personwise/chenyong/)<sup>\*</sup>,&nbsp; [Yuqing Hou]<sup>\*</sup>,&nbsp; [Shu Leng],&nbsp; [Qing Zhang],&nbsp; [Zhouchen Lin](https://zhouchenlin.github.io/),&nbsp; [Dell Zhang](https://www.dcs.bbk.ac.uk/~dell/)&nbsp; &nbsp; 
+[Yong Chen](https://zero-lab-pku.github.io/personwise/chenyong/),&nbsp; [Yuqing Hou],&nbsp; [Shu Leng],&nbsp; [Qing Zhang],&nbsp; [Zhouchen Lin](https://zhouchenlin.github.io/),&nbsp; [Dell Zhang](https://www.dcs.bbk.ac.uk/~dell/)&nbsp; &nbsp; 
 in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019, **Oral Presentation**
 
-<img src='./assets/intro.png' width=800>
+<img src='./LTHNet.png' width=800>
 
 Further information please contact [Yong Chen](mailto:butterfly.chinese@pku.edu.cn).
 
