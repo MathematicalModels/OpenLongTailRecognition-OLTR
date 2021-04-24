@@ -3,9 +3,9 @@
 [[Paper]](https://) 
 
 ## Overview
-`Open Long-Tailed Recognition (OLTR)` is the author's re-implementation of the long-tail recognizer described in:  
+`LTH Net` is the author's re-implementation of the long-tail hashing network described in:  
 "[Long-Tail Hashing](https://arxiv.org/abs/****)"   
-[Yong Chen](https://zero-lab-pku.github.io/personwise/chenyong/)<sup>\*</sup>,&nbsp; [Zhongqi Miao](https://github.com/zhmiao)<sup>\*</sup>,&nbsp; [Xiaohang Zhan](https://xiaohangzhan.github.io/),&nbsp; [Jiayun Wang](http://pwang.pw/),&nbsp; [Boqing Gong](http://boqinggong.info/),&nbsp; [Stella X. Yu](https://www1.icsi.berkeley.edu/~stellayu/)&nbsp; (CUHK & UC Berkeley / ICSI)&nbsp; 
+[Yong Chen](https://zero-lab-pku.github.io/personwise/chenyong/)<sup>\*</sup>,&nbsp; [Yuqing Hou]<sup>\*</sup>,&nbsp; [Shu Leng],&nbsp; [Qing Zhang],&nbsp; [Zhouchen Lin](https://zhouchenlin.github.io/),&nbsp; [Dell Zhang](https://www.dcs.bbk.ac.uk/~dell/)&nbsp; (CUHK & UC Berkeley / ICSI)&nbsp; 
 in IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019, **Oral Presentation**
 
 <img src='./assets/intro.png' width=800>
@@ -112,6 +112,7 @@ The current code was prepared using single GPU. The use of multi-GPU can cause p
 ## License and Citation
 The use of this software is released under [BSD-3](https://github.com/zhmiao/OpenLongTailRecognition-OLTR/blob/master/LICENSE).
 ```
+TODO
 @inproceedings{openlongtailrecognition,
   title={Large-Scale Long-Tailed Recognition in an Open World},
   author={Liu, Ziwei and Miao, Zhongqi and Zhan, Xiaohang and Wang, Jiayun and Gong, Boqing and Yu, Stella X.},
